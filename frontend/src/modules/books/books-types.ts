@@ -5,7 +5,6 @@ export interface Book {
   shortDescription?: string;
   fullDescription?: string;
   year?: string;
-  date?: string;
 }
 
 export enum BooksActions {
