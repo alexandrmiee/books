@@ -10,3 +10,31 @@ Book's fields:
 
 ## Mockups
 https://www.figma.com/file/zjD3uyQmHOEh1YyeyrkhXX/Books?node-id=0%3A1
+
+## Frontend
+To start frontend 
+```bash
+cd frontend
+npm ci
+npm run dev
+```
+
+## Backend
+To start backend
+
+add .env file with database config
+
+POSTGRES_HOST=
+POSTGRES_PORT=
+POSTGRES_USER=
+POSTGRES_PASSWORD=
+POSTGRES_DB=
+POSTGRES_SSL=
+
+
+```bash
+cd backend
+npm ci
+npm run db:reset
+npm run start:dev
+```
