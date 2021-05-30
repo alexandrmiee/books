@@ -23,14 +23,15 @@ npm run dev
 To start backend
 
 add .env file with database config
-
+```
 POSTGRES_HOST=
 POSTGRES_PORT=
 POSTGRES_USER=
 POSTGRES_PASSWORD=
 POSTGRES_DB=
 POSTGRES_SSL=
-
+```
+then 
 
 ```bash
 cd backend
