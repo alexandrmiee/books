@@ -5,7 +5,7 @@ import {BooksDesc} from './books-desc';
 import {BooksLogo} from './books-logo';
 import * as styles from './book-item.scss';
 
-interface BookProps {
+export interface BookProps {
     id: string;
     logo: string;
     title: string;
@@ -23,9 +23,9 @@ export const BookItem: FC<BookProps> = ({
     }, [onBookSelect, id]);
 
     return (
-        <section className={cn('book')} onClick={handleBookSelect} role="presentation">
-            <BooksLogo className={cn('book__logo')} src={logo} alt={title} />
-            <BooksDesc className={cn('book__desc')} title={title} description={shortDescription} />
+        <section className={cn('book-item')} onClick={handleBookSelect} role="presentation">
+            <BooksLogo className={cn('book-item__logo')} src={logo} alt={title} />
+            <BooksDesc className={cn('book-item__desc')} title={title} description={shortDescription} />
         </section>
     );
 };

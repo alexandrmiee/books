@@ -5,7 +5,7 @@ import {useHistory} from 'react-router-dom';
 import {Book as BookType, booksSelector, loadBooks} from '@modules/books';
 import {BookItem} from './components/book-item';
 
-export const Books: FC<void> = () => {
+export const Books: FC = () => {
     const books: BookType[] = useSelector(booksSelector);
     const dispatch = useDispatch();
     const history = useHistory();

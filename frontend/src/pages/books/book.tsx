@@ -8,13 +8,13 @@ import {BooksDesc} from './components/books-desc';
 import {BooksLogo} from './components/books-logo';
 import * as styles from './book.scss';
 
-interface RouteParams {
+export interface RouteParams {
   bookId: string;
 }
 
 const cn = classNames.bind(styles);
 
-export const Book: FC<void> = () => {
+export const Book: FC = () => {
     const book: BookType = useSelector(bookSelector);
     const dispatch = useDispatch();
     const {bookId} = useParams() as RouteParams;

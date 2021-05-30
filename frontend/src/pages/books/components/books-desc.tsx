@@ -1,6 +1,6 @@
 import React, {FC} from 'react';
 
-interface BooksDescProps {
+export interface BooksDescProps {
   title: string;
   description?: string;
   year?: string;
@@ -21,9 +21,7 @@ export const BooksDesc: FC<BooksDescProps> = ({
     <div className={className}>
         <h2>
             {title}
-            {' '}
             {year && <Year year={year} />}
-            {' '}
         </h2>
         <div>{description}</div>
     </div>

@@ -1,6 +1,6 @@
 import React, {FC} from 'react';
 
-interface BooksLogoProps {
+export interface BooksLogoProps {
   src: string;
   alt?: string;
   className?: string;

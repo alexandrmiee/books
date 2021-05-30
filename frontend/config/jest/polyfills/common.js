@@ -3,9 +3,3 @@ global.requestAnimationFrame = function(callback) {
 };
 
 window.URL.createObjectURL = () => {}
-
-jest.mock('@fe-arm/fe-package-djvujs', () => ({
-    DjVu: {
-        Worker: function(){}
-    }
-}))

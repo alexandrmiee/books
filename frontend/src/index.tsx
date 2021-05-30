@@ -4,7 +4,6 @@ import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 
 import './styles/index.scss';
-import './styles/vendor.scss';
 
 import {App} from './app';
 

@@ -35,7 +35,7 @@ module.exports = {
         path.resolve(__dirname, 'enzyme.js'),
         'jest-localstorage-mock'
     ],
-    coverageReporters: ['lcov'],
+    coverageReporters: ['text'],
     collectCoverageFrom: [
         'src/**/*.{ts,tsx}',
         '!config/**/*.*',
