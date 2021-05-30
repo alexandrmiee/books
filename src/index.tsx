@@ -1,17 +1,17 @@
-import '@babel/polyfill';
+import "@babel/polyfill";
 
-import * as React from 'react';
-import * as ReactDOM from 'react-dom';
+import * as React from "react";
+import * as ReactDOM from "react-dom";
 
-import './styles/index.scss';
-import './styles/vendor.scss';
+import "./styles/index.scss";
+import "./styles/vendor.scss";
 
-import {App} from './app';
+import { App } from "./app";
 
 declare const module: any;
 
-ReactDOM.render(<App />, document.getElementById('app'));
+ReactDOM.render(<App />, document.getElementById("app"));
 
 if (module.hot) {
-    module.hot.accept();
+  module.hot.accept();
 }

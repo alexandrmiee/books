@@ -23,13 +23,11 @@ module.exports = {
     ],
     moduleNameMapper: {
         '\\.(css|scss|path)$': path.resolve(__dirname, 'mocks', 'style.js'),
-        '@ui-kit': path.resolve(paths.src, 'components'),
+        '@ui-kit/(.*)$': path.resolve(paths.src, 'components/$1'),
         '@utils/(.*)$': path.resolve(paths.src, 'utils/$1'),
         '@modules/(.*)$': path.resolve(paths.src, 'modules/$1'),
-        '@hooks': path.resolve(paths.src, 'hooks'),
-        '@mrm/modules/(.*)$': path.resolve(paths.src, 'modules/mrm-modules/$1'),
-        '@mrm/modules': path.resolve(paths.src, 'modules/mrm-modules'),
-        '@mrm/pages': path.resolve(paths.src, 'pages/mrm-pages'),
+        '@hooks/(.*)$': path.resolve(paths.src, 'hooks/$1'),
+        '@constants/(.*)$': path.resolve(paths.src, 'constants/$1'),
         '@app/(.*)$': path.resolve(paths.src, './$1'),
     },
     setupFiles: [

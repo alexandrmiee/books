@@ -8,9 +8,9 @@ export interface Book {
 }
 
 export enum BooksActions {
-  SET_BOOKS = 'SET_BOOKS'
+  SET_BOOKS = "SET_BOOKS",
 }
 
 export interface BooksState {
-  books: Book[],
+  books: Book[];
 }

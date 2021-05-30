@@ -17,10 +17,10 @@
     "paths": {
       "@app/*": ["./*"],
       "@modules/*": [ "modules/*" ],
-      "@ui-kit": [ "components" ],
+      "@ui-kit/*": [ "components" ],
       "@utils/*": [ "utils/*" ],
-      "@hooks": [ "hooks" ],
-      "@constants": [ "constants" ]
+      "@hooks/*": [ "hooks/*" ],
+      "@constants/*": [ "constants/*" ]
     }
   },
   "include": [

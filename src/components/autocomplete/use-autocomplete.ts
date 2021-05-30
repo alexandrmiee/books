@@ -1,4 +1,4 @@
-import throttle from 'lodash/throttle';
+import throttle from "lodash/throttle";
 import { useCallback, useEffect, useState } from "react";
 
 const DEFAULT_THROTTLE_TIMEOUT = 200;
@@ -13,7 +13,7 @@ export const useAutocomplete = (
   const fetcher = useCallback(
     throttle<any>(
       (value: string) =>
-        fetch(value ?? '', DEFAULT_LIMIT).then((x) => {
+        fetch(value ?? "", DEFAULT_LIMIT).then((x) => {
           setValues(x);
         }),
       DEFAULT_THROTTLE_TIMEOUT
