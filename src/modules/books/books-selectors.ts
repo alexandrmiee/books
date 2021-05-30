@@ -8,3 +8,9 @@ export const booksSelector: Selector<any, Book[]> = createSelector(
     rootSelector,
     state => state.books
 );
+
+export const bookSelector: Selector<any, Book> = createSelector(
+    rootSelector,
+    state => state.book
+);
+

@@ -7,6 +7,7 @@ const booksHandler = handleActions(MODULE_NAMESPACE);
 
 const initialState: BooksState = {
     books: [],
+    book: null,
 };
 
 export const booksReducer = booksHandler(
@@ -17,6 +18,13 @@ export const booksReducer = booksHandler(
         ): BooksState => ({
             ...state,
             books: payload,
+        }),
+        [BooksActions.SET_BOOK]: (
+            state: BooksState,
+            {payload}: Action<Book>
+        ): BooksState => ({
+            ...state,
+            book: payload,
         }),
     },
     initialState

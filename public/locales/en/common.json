@@ -1,14 +1,3 @@
 {
-  "no": "No",
-  "yes": "Yes",
-  "save": "Save",
-  "saveAndReturn": "Save & Return",
-  "and": "and",
-  "cancel": "Cancel",
-  "close": "Close",
-  "none": "None",
-  "ok": "OK",
-  "okay": "Okay",
-  "done": "Done",
-  "add": "Add"
+  "buy": "Buy"
 }

@@ -13,3 +13,11 @@ export const getAll = async (
     });
     return data;
 };
+
+export const getBook = async (bookId: string): Promise<Book> => {
+    const {data} = await request({
+        url: `${BOOKS_API_GET}/${bookId}`,
+        method: HttpMethods.GET,
+    });
+    return data;
+};
