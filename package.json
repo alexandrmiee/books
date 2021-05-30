@@ -5,7 +5,6 @@
   "scripts": {
     "build": "node ./config/webpack",
     "dev": "cross-env NODE_ENV=development node ./config/webpack",
-    "test": "jest",
     "stylelint": "stylelint \"**/*.scss\"",
     "stylelint:fix": "stylelint \"**/*.scss\" --fix",
     "prettier": "prettier --check \"src/**/*.ts\" \"src/**/*.tsx\"",

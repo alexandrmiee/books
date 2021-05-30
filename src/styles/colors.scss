@@ -1,0 +1,164 @@
+$base-gray: #999;
+$mail-color: #2944b9;
+
+$color-primary-font: rgba(0, 0, 0, 0.87);
+$color-secondary-font: rgba(0, 0, 0, 0.6);
+
+$color-main-background: rgba(255, 255, 255, 0.9);
+$color-whisper: #f0f1f7;
+$color-whisper-light: rgba($color-whisper, 0.2);
+$shadow-color: rgba(69, 70, 0, 0.15);
+$draggable-row-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14),
+    0 3px 14px 2px rgba(0, 0, 0, 0.12);
+$side-menu-box-shadow--right: -1px 0 2px 0 rgba(0, 0, 0, 0.15);
+$side-menu-box-shadow--left: 2px 2px 4px 0 rgba(0, 0, 0, 0.15);
+$login-page-shadow-color: rgba(69, 70, 77, 0.15);
+
+$dark-shadow-color: rgba(0, 0, 0, 0.15);
+$primary-button-shadow-color: rgba(0, 0, 0, 0.2);
+$color-secondary-gray: #f0f1f7;
+$color-base-shadow: rgba(69, 70, 0, 0.15);
+$color-popup-shadow: rgba(0, 0, 0, 0.25);
+
+$color-loader-overlay: rgba(255, 255, 255, 0.55);
+
+$color-success: #48933d;
+$color-warning: #e8ad17;
+$color-error: #cb4f4f;
+$color-primary: #2944b9;
+$color-secondary: #2d3e59;
+$color-prohibition: #d98181;
+$color-permission: #e9eaf2;
+
+$color-success-bg: #d1f3c5;
+$color-warning-bg: #ffe7b6;
+$color-error-bg: #ffe8e8;
+
+$color-manatee-gray: #9194a3;
+
+$color-overlay: rgba(0, 0, 0, 0.3);
+$color-blue-haze: #d3d5e6;
+$color-white: #fff;
+$color-black-white: #fffffe;
+$color-black: #000;
+$color-black-alt: #191919;
+$color-pale-gray: #f0f1f7;
+$color-blue-gray: #334868;
+$color-crimson: #de1010;
+$color-cerulean-blue: #2944b9;
+$color-bluewood: #2d3e59;
+$color-white-lilac: #f2f4fa;
+$color-dark-gray: #333;
+$color-light-gray: #e2e2e2;
+$color-silver-gray: #c0c0c0;
+$color-gray: #6b7689;
+$color-dim-gray: #646464;
+$color-heather: #afbbcc;
+$color-bermuda-grey: #6e88a4;
+$color-slate-grey: #767e8e;
+$color-mine-shaft: #3e3e3e;
+$color-raven: #767e8e;
+
+$color-disabled: #b3b3b3;
+$color-disabled-table: #afafaf;
+$color-enabled: #949494;
+
+$color-hover-black: rgba(0, 0, 0, 0.12);
+$color-active-black: rgba(0, 0, 0, 0.3);
+$color-passive-black: rgba(0, 0, 0, 0.1);
+
+$color-icon: #a3a6b8;
+$color-icon-primary: $color-cerulean-blue;
+$color-icon-toggle-filled: $color-black-alt;
+$color-icon-toggle-empty: $color-raven;
+
+$color-calendar-background: $color-white;
+$color-calendar-highlighting: $color-cerulean-blue;
+$color-calendar-day-highlighting-blue: #90caf9;
+$color-calendar-day-highlighting-lightblue: #bbdefb;
+$color-calendar-date-focused: #496bff;
+$color-calendar-grey: rgba(0, 0, 0, 0.15);
+$color-calendar-day-off: #d70000;
+
+$color-menu-secondary: rgba(0, 0, 0, 0.15);
+$color-menu-header-background: #bbdefb;
+$color-menu-message: $color-slate-grey;
+
+$color-tool-tip-background: $color-primary-font;
+
+$color-background-header: #f8f8fa;
+$color-header: #212121;
+
+$color-background-valid: rgba(41, 68, 185, 0.05);
+$color-background-error: rgba(203, 79, 79, 0.05);
+$color-background-gray: rgba(17, 22, 45, 0.05);
+$color-text: #3e3e3e;
+$color-text-valid: #555657;
+$color-error-code: #787575;
+
+$color-navigation-arrow-drop-down: rgba(0, 0, 0, 0.54);
+
+$color-navigator-text: rgba(62, 62, 62, 0.6);
+
+$color-indicator-primary: $color-cerulean-blue;
+$color-indicator-active: #48933d;
+$color-indicator-warning: $color-warning;
+$color-indicator-disabled: $color-blue-haze;
+$color-indicator-error: $color-crimson;
+
+$color-table-row: $color-blue-haze;
+$color-table-row-highlight: $color-background-header;
+$color-table-row-clickable: $color-whisper;
+$color-table-row-selected: $color-whisper;
+$color-table-border: #e9eaf2;
+$color-table-additional-text: $color-raven;
+
+$color-button-disabled: $color-heather;
+
+$color-button-primary: $color-cerulean-blue;
+$color-button-primary-contrast: $color-white;
+$color-button-primary-disabled-bg: $color-light-gray;
+$color-button-primary-disabled-text: $color-silver-gray;
+
+$color-button-secondary: $color-heather;
+$color-button-secondary-contrast: $color-cerulean-blue;
+$color-button-secondary-hover-bg: transparentize($color-black, 0.95);
+$color-sort-icon: #dadada;
+
+$color-input-border: #c6c6c6;
+$color-input-underline: $color-black-alt;
+$color-border-focus: $color-cerulean-blue;
+
+$color-checkbox-background: $color-white;
+$color-checkbox-border: $color-heather;
+$color-checkbox-border-hover: $color-passive-black;
+$color-checkbox-background-checked: $color-cerulean-blue;
+$color-checkbox-background-indeterminate: $color-cerulean-blue;
+$color-checkbox-background-disabled: $color-overlay;
+$color-checkbox-border-disabled: $color-secondary-font;
+$color-checkbox-background-disabled-checked: $color-secondary-font;
+
+$color-main-menu-background: $color-white;
+$color-main-menu-header-font: $color-blue-gray;
+$color-main-menu-header-background: $color-pale-gray;
+$color-main-menu-item-icon-background: $color-pale-gray;
+$color-main-menu-item-border-color: $color-pale-gray;
+
+$color-collapse-card-border: $shadow-color;
+$color-collapse-card-footer-background: $color-background-header;
+$color-collapse-card-separate-line: $color-passive-black;
+
+$color-form-title: $color-black-alt;
+$color-form-subtitle: $color-black-alt;
+
+$color-modal-layout-title: $color-black-alt;
+$color-modal-layout-subtitle: $color-black-alt;
+
+$color-input-text-filled: $color-black-alt;
+$color-input-text-empty: $color-raven;
+
+$color-page-subtitle: $color-raven;
+
+$color-stub-message-text: $color-raven;
+
+$color-link-primary: $color-cerulean-blue;

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="build" content=<%= htmlWebpackPlugin.options.version %>>
+    <link rel="shortcut icon" href="/<%= htmlWebpackPlugin.files.favicon %>">
+    <link rel="stylesheet" href="/<%= htmlWebpackPlugin.files.chunks.app.css %>">
+    <title>ePlatform: АРМ РСА</title>
+</head>
+<body>
+    <div id="app"></div>
+    <script defer src="/<%= htmlWebpackPlugin.files.chunks.vendors.entry %>"></script>
+    <script defer src="/<%= htmlWebpackPlugin.files.chunks.app.entry %>"></script>
+</body>
+</html>

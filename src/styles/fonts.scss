@@ -1,0 +1,109 @@
+@import './colors';
+
+$main-font-family: 'Roboto', sans-serif;
+$monospace-font-family: 'RobotoMono', monospace;
+$regular-font-weight: normal;
+
+$smallest-font-size: 0.75rem;
+$small-font-size: 0.875rem;
+$regular-font-size: 1rem;
+$medium-font-size: 1.125rem;
+$big-font-size: 1.25rem;
+$biggest-font-size: 1.5rem;
+
+$modal-header-font-size: 22px;
+
+@mixin base-header-font($color, $line-height: 1.17, $font-size: $biggest-font-size, $letter-spacing: normal) {
+    color: $color;
+    font-family: $main-font-family;
+    font-size: $font-size;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: $letter-spacing;
+    line-height: $line-height;
+}
+
+@mixin menu-header-font() {
+    @include base-header-font($color-bluewood);
+    @content;
+}
+
+@mixin menu-font-normal() {
+    @include menu-header-font() {
+        font-weight: normal;
+    }
+}
+
+@mixin menu-sub-item-font() {
+    @include menu-header-font() {
+        font-size: $regular-font-size;
+        font-weight: normal;
+    }
+}
+
+@mixin dialog-header-font() {
+    @include base-header-font($color-header, 1.56, $medium-font-size);
+}
+
+@mixin header-font() {
+    @include base-header-font($color-primary-font);
+}
+
+@mixin small-header-font() {
+    @include base-header-font($color-primary-font, 1.17, $big-font-size);
+}
+
+@mixin sub-header-font($color: $color-active-black) {
+    color: $color;
+    font-family: $main-font-family;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: 0.2px;
+    line-height: 1.5;
+}
+
+@mixin subtitle-header-font($color: $color-heather) {
+    color: $color;
+    font-size: 14px;
+    letter-spacing: 0.25px;
+    line-height: 1.43;
+}
+
+@mixin base-main-font($color, $weight: normal, $spacing: 0.4px, $line-height: 1.5) {
+    color: $color;
+    font-family: $main-font-family;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: $weight;
+    letter-spacing: $spacing;
+    line-height: $line-height;
+}
+
+@mixin main-font() {
+    @include base-main-font($color-primary-font);
+}
+
+@mixin base-small-font($color, $line-height: 1.33, $letter-spacing: 0.4px, $weight: normal) {
+    color: $color;
+    font-family: $main-font-family;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: $weight;
+    letter-spacing: $letter-spacing;
+    line-height: $line-height;
+}
+
+@mixin base-medium-font($color: $color-primary-font, $weight: normal, $spacing: normal, $line-height: 1.43) {
+    color: $color;
+    font-family: $main-font-family;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: $weight;
+    letter-spacing: $spacing;
+    line-height: $line-height;
+}
+
+@mixin modal-header-font {
+    @include base-header-font($color-modal-layout-title, 1.17, $modal-header-font-size);
+}
