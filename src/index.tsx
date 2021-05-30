@@ -1,13 +1,17 @@
-import "reflect-metadata";
-import React from "react";
-import ReactDOM from "react-dom";
-import { initLocalization } from "./i18n";
+import '@babel/polyfill';
 
-import App from "./App";
+import * as React from 'react';
+import * as ReactDOM from 'react-dom';
 
-const renderApp = () => {
-  initLocalization();
-  ReactDOM.render(<App />, document.getElementById("root"));
-};
+import './styles/index.scss';
+import './styles/vendor.scss';
 
-renderApp();
+import {App} from './app';
+
+declare const module: any;
+
+ReactDOM.render(<App />, document.getElementById('app'));
+
+if (module.hot) {
+    module.hot.accept();
+}
