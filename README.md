@@ -39,3 +39,6 @@ npm ci
 npm run db:reset
 npm run start:dev
 ```
+
+Swagger API
+`http://localhost:3000/doc/`
