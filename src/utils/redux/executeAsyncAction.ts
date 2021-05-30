@@ -1,8 +1,8 @@
-import { DispatchType } from "@utils/redux";
+import {DispatchType} from '@utils/redux';
 
 export const executeAsyncAction = (
-  _dispatch: DispatchType,
-  executor: () => Promise<any>
+    _dispatch: DispatchType,
+    executor: () => Promise<any>
 ): Promise<any> => executor();
 // TODO: show loader
 // .catch(error => {

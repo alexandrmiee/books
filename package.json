@@ -11,8 +11,8 @@
     "prettier:fix": "prettier --write \"src/**/*.ts\" \"src/**/*.tsx\"",
     "lint": "eslint \"src/**/*.ts\" \"src/**/*.tsx\"",
     "lint:fix": "eslint \"src/**/*.ts\" \"src/**/*.tsx\" --fix",
-    "format": "npm run lint:fix && npm run prettier:fix",
-    "prepush": "npm run prettier && npm run lint"
+    "format": "npm run lint:fix",
+    "prepush": "npm run lint"
   },
   "dependencies": {
     "@material-ui/core": "^4.11.0",

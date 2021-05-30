@@ -1,5 +1,5 @@
-import React from "react";
-import Button, { ButtonProps } from "@material-ui/core/Button";
+import React from 'react';
+import Button, {ButtonProps} from '@material-ui/core/Button';
 
 export interface Props extends ButtonProps {
   text: string;
@@ -7,11 +7,11 @@ export interface Props extends ButtonProps {
 }
 
 export const ClientButton: React.FC<Props> = ({
-  text,
-  wrapperStyles,
-  ...buttonConfig
+    text,
+    wrapperStyles,
+    ...buttonConfig
 }) => (
-  <div className="button" style={wrapperStyles}>
-    <Button {...buttonConfig}>{text}</Button>
-  </div>
+    <div className="button" style={wrapperStyles}>
+        <Button {...buttonConfig}>{text}</Button>
+    </div>
 );

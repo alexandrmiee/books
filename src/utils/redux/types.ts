@@ -1,5 +1,5 @@
-import { AnyAction } from "redux";
-import { ThunkAction, ThunkDispatch } from "redux-thunk";
+import {AnyAction} from 'redux';
+import {ThunkAction, ThunkDispatch} from 'redux-thunk';
 
 export type Action<P = void> = P extends void
   ? Readonly<{ type: string }>
