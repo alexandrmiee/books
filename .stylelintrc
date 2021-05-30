@@ -1,0 +1,30 @@
+{
+    "extends": "stylelint-config-standard",
+    "plugins": [
+        "stylelint-scss",
+        "stylelint-order",
+        "stylelint-no-unsupported-browser-features"
+    ],
+    "rules": {
+        "at-rule-no-unknown": null,
+        "scss/at-rule-no-unknown": true,
+        "order/order": [
+            "custom-properties",
+            "declarations",
+            "at-rules"
+        ],
+        "order/properties-alphabetical-order": true,
+        "indentation": 4,
+        "plugin/no-unsupported-browser-features": [true, {
+            "browsers": [
+                "IE >= 11",
+                "last 2 Chrome versions",
+                "Safari >= 9",
+                "last 2 Firefox versions",
+                "last 2 Opera versions"
+            ],
+            "ignore": ["outline", "viewport-units", "flexbox", "css-gradients", "calc"],
+            "severity": "error"
+        }]
+    }
+}
