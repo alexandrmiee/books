@@ -41,30 +41,6 @@ module.exports = {
             protocol: PROTOCOLS.HTTP,
             host: 'localhost',
             port: 8001
-        },
-        ift1: {
-            protocol: PROTOCOLS.HTTPS,
-            host: 'fe-mdm-epam-aws-ift1.dev-test.epm-insr.projects.epam.com',
-        },
-        'arm-dev': {
-            protocol: PROTOCOLS.HTTPS,
-            host: 'fe-mdm-arm-dev.dev-test.epm-insr.projects.epam.com'
-        },
-        'is-test': {
-            protocol: PROTOCOLS.HTTPS,
-            host: 'fe-mdm-ms-is-test.dev-test.epm-insr.projects.epam.com'
-        },
-        'kbm-plus-test': {
-            protocol: PROTOCOLS.HTTPS,
-            host: 'fe-mdm-branch-7-test.dev-test.epm-insr.projects.epam.com/'
-        },
-        'arm-test': {
-            protocol: PROTOCOLS.HTTPS,
-            host: 'fe-mdm-arm-test.dev-test.epm-insr.projects.epam.com'
-        },
-        'arm-at': {
-            protocol: PROTOCOLS.HTTPS,
-            host: 'fe-mdm-arm-at.dev-test.epm-insr.projects.epam.com'
-        },
+        }
     }
 };

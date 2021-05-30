@@ -6,9 +6,10 @@ const development = require('./configs/development');
 const production = require('./configs/production');
 
 const {compile} = require('./compiler');
+const {runDevServer} = require('./dev-server');
 
 const activeConfig = isProduction ? production : development;
-const action = compile;
+const action = isProduction ? compile : runDevServer;
 
 const config = merge(common, activeConfig);
 

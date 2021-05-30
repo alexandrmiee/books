@@ -11,6 +11,21 @@ export const loadBooks = (
     search?: string,
     limit: number = BOOKS_LIMIT
 ) => async (dispatch: DispatchType) => {
-    const books = await getAll(search, limit);
-    dispatch(setBooks(books));
+    try {
+        const books = await getAll(search, limit);
+        dispatch(setBooks(books));
+    } catch {
+        dispatch(setBooks([
+            {
+                id: '1',
+                logo: 'logo',
+                title: 'title 1',
+            },
+            {
+                id: '2',
+                logo: 'logo',
+                title: 'title 2',
+            },
+        ]));
+    }
 };
