@@ -7,13 +7,24 @@ interface BooksDescProps {
   className?: string;
 }
 
-const Year : FC<{year: string}> = ({year}) => (
-  <span>({year})</span>
+const Year: FC<{year: string}> = ({year}) => (
+    <span>
+        (
+        {year}
+        )
+    </span>
 );
 
-export const BooksDesc: FC<BooksDescProps> = ({title, description, className, year}) => (
+export const BooksDesc: FC<BooksDescProps> = ({
+    title, description, className, year,
+}) => (
     <div className={className}>
-        <h2>{title} {year && <Year year={year}/>} </h2>
+        <h2>
+            {title}
+            {' '}
+            {year && <Year year={year} />}
+            {' '}
+        </h2>
         <div>{description}</div>
     </div>
 );

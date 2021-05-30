@@ -17,24 +17,24 @@ export const Books: FC<void> = () => {
 
     const handleBookSelect = useCallback((id: string) => {
         history.push(`/${id}`);
-    },[history])
-    
+    }, [history]);
+
     return (
         <article>
             {
-            books && books.map(({
-                id, logo, title, shortDescription,
-            }) => (
-                <BookItem
-                    key={id}
-                    id={id}
-                    logo={logo}
-                    title={title}
-                    shortDescription={shortDescription}
-                    onBookSelect={handleBookSelect}
-                />
-            ))
-        }
+                books && books.map(({
+                    id, logo, title, shortDescription,
+                }) => (
+                    <BookItem
+                        key={id}
+                        id={id}
+                        logo={logo}
+                        title={title}
+                        shortDescription={shortDescription}
+                        onBookSelect={handleBookSelect}
+                    />
+                ))
+            }
         </article>
     );
 };

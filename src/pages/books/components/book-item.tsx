@@ -15,13 +15,15 @@ interface BookProps {
 
 const cn = classNames.bind(styles);
 
-export const BookItem: FC<BookProps> = ({id, logo, title, shortDescription, onBookSelect}) => {
+export const BookItem: FC<BookProps> = ({
+    id, logo, title, shortDescription, onBookSelect,
+}) => {
     const handleBookSelect = useCallback(() => {
         onBookSelect(id);
-    },[onBookSelect]);
+    }, [onBookSelect, id]);
 
     return (
-        <section className={cn('book')} onClick={handleBookSelect}>
+        <section className={cn('book')} onClick={handleBookSelect} role="presentation">
             <BooksLogo className={cn('book__logo')} src={logo} alt={title} />
             <BooksDesc className={cn('book__desc')} title={title} description={shortDescription} />
         </section>
